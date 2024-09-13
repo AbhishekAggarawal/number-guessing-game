@@ -45,6 +45,7 @@ const Game: React.FC = () => {
     if (guessNumber === targetNumber) {
       const newScore = score - 1;
       setScore(20);
+      setHighScore(newScore);
       setMessage('Correct! Starting a new game...');
       
       if (newScore > highScore) {
